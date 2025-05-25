@@ -13,8 +13,8 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v4
 
-      - name: Test APIKey
-        run: go test ./...
+      - name: Test APIKey coverage
+        run: go test ./... -cover
 
       - name: Echo Go version
         run: (exit 0)
