@@ -25,4 +25,7 @@ jobs:
         run: (exit 0)
   style:
     name: Style
-    run: test -z $(go fmt ./...)
+    runs-on: ubuntu-latest
+    steps:
+      name: Fix formatting
+      run: test -z $(go fmt ./...)
