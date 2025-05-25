@@ -2,3 +2,4 @@ out
 .env
 learn-cicd-starter
 notely
+GCP_CREDENTIALS.json
