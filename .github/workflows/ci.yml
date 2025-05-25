@@ -13,8 +13,8 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v4
 
-      - name: Test go
-        uses: actions/checkout@v5
+      - name: Test API
+        uses: actions/checkout@v4
         run: go test ./...
 
       - name: Echo Go version
