@@ -21,8 +21,6 @@ jobs:
       - name: Test APIKey coverage
         run: go test ./... -cover
 
-      - name: Echo Go version
-        run: (exit 0)
   style:
     name: Style
     runs-on: ubuntu-latest
@@ -41,4 +39,6 @@ jobs:
 
       - name: Install staticcheck
         run: go install honnef.co/go/tools/cmd/staticcheck@latest
-        run: go fmt
+
+      - name: run staticcheck
+        run: staticcheck ./...
